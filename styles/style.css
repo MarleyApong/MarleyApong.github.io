@@ -403,6 +403,8 @@ section {
 
 #porfolio .content .card .card-details a {
     z-index: 100;
+    text-decoration:underline;
+    color: var(--color-text2);
 }
 
 #contact {
