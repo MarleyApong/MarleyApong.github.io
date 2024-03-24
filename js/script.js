@@ -6,6 +6,27 @@ menu.onclick = () => {
     nav.classList.toggle('active')
 }
 
+let about_right = document.querySelector("#about .right")
+let btn__about = document.querySelector("#btn-about")
+let comp = document.querySelector(".competence")
+let bool = 0
+btn__about.onclick = () => {
+    if (bool == 0) {
+        about_right.classList.add("top")
+        btn__about.innerHTML = "Reduire"
+        btn__about.classList.add("move")
+        comp.classList.add("show")
+        bool = 1
+    }
+    else {
+        about_right.classList.remove("top")
+        btn__about.innerHTML = "Lire plus"
+        btn__about.classList.remove("move")
+        comp.classList.remove("show")
+        bool = 0
+    }
+}
+
 let header = document.querySelector("header");
 let sections = document.querySelectorAll("section")
 let navLinks = document.querySelectorAll("header nav a")
